@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div className='h-screen flex flex-col justify-center items-center'>
+        <div className='min-h-screen flex flex-col justify-center items-center'>
             <p className='font-extrabold text-7xl text-zinc-200 font-sans'>I want to</p>
             <div className='grid md:grid-cols-2 mt-14 gap-6'>
                 <Link to="/convert-image">

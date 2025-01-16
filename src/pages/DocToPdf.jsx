@@ -35,7 +35,7 @@ const DocToPdf = () => {
     };
 
     return (
-        <div className='flex flex-col justify-center items-center mx-20'>
+        <div className='h-screen flex flex-col justify-center items-center mx-20'>
             <h1 className='text-zinc-200 font-bold lg:text-5xl text-xl text-center pt-10'>Convert DOC to PDF</h1>
             <div className='mt-20 text-zinc-200'>
                 <input

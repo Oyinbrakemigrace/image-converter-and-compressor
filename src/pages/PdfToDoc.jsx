@@ -54,7 +54,7 @@ const PdfToDoc = () => {
     };
 
     return (
-        <div className="mx-20">
+        <div className="mx-20 min-h-screen">
             <h1 className="text-zinc-200 font-bold lg:text-5xl text-2xl whitespace-nowrap text-center pt-10">
                 Convert PDF to DOC
             </h1>

@@ -5,10 +5,11 @@ import ConvertImage from './pages/ConvertImage'
 import CompressImage from './pages/CompressImage'
 import PdfToDoc from './pages/PdfToDoc'
 import DocToPdf from './pages/DocToPdf'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className='bg-zinc-800 min-h-screen'>
+    <div className='bg-zinc-800 h-full min-h-screen'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/pdf-to-doc' element={<PdfToDoc />} />
           <Route path='/doc-to-pdf' element={<DocToPdf />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )

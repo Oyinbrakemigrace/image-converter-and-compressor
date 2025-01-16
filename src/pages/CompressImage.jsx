@@ -50,7 +50,7 @@ const CompressImage = () => {
     };
 
     return (
-        <div className="mx-20">
+        <div className="mx-20 min-h-screen">
             <h1 className="text-zinc-200 font-bold lg:text-5xl text-xl text-center pt-10">{compressedImage ? "Compressed Image🎉" : "Compress Image"}</h1>
             <div className="text-zinc-200 mt-10">
                 {compressedImage ? (
