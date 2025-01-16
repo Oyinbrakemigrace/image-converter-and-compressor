@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
+import { ClipLoader } from 'react-spinners';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -54,10 +55,10 @@ const PdfToDoc = () => {
 
     return (
         <div className="mx-20">
-            <h1 className="text-zinc-200 font-bold lg:text-5xl text-2xl text-center pt-10">
+            <h1 className="text-zinc-200 font-bold lg:text-5xl text-2xl whitespace-nowrap text-center pt-10">
                 Convert PDF to DOC
             </h1>
-            <div className="text-zinc-200 mt-10 ">
+            <div className="text-zinc-200 mt-20 ">
                 <input
                     type="file"
                     onChange={handleFileUpload}
@@ -65,11 +66,12 @@ const PdfToDoc = () => {
                     className="block mx-auto mb-4"
                 />
                 {loading ? (
-                    <div className="flex justify-center items-center">
-                        <span className="text-xl text-zinc-200 mr-2">Processing...</span>
-                    </div>
+                    <div className='mt-20 flex items-center justify-center space-x-2'>
+                            <span className='text-2xl text-blue-500'>Generating DOC</span>
+                        <ClipLoader size={25} color='#3b82f6' />
+                        </div>
                 ) : (
-                    <p className="mt-4 text-center text-green-600">
+                    <p className="mt-20 text-center text-blue-500">
                         {textContent ? 'Conversion completed!🎉' : 'Upload a PDF file to begin.'}
                     </p>
                 )}
